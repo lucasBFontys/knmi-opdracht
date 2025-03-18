@@ -11,6 +11,7 @@
     --color-groen: #038a6f;
 
     --color-groendark: #006551;
+    --color-blauwaidsvelk: #759CE0;
 
     --font-body: 'montserrat', sans-serif;
     --font-accent: 'Poppins', sans-serif;
@@ -25,4 +26,6 @@
 
 
 
-body {}
+body {
+    background-color: var(--color-wit);
+}

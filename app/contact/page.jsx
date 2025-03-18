@@ -1,6 +1,12 @@
 export default function Contact() {
     return (
-        <section className="bg-wit">
+        <section className=" overflow-hidden  relative">
+
+            <div className="absolute inset-0 -z-10 pointer-events-none">
+                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% bottom-20 -left-30"></div>
+                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% -top-10 -right-30"></div>
+            </div>
+
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-4xl tracking-tight font-heading font-bold text-center text-black">
                     Neem contact op
@@ -13,14 +19,16 @@ export default function Contact() {
                         <label htmlFor="email" className="block mb-2 text-sm font-body font-medium text-gray-900">
                             Jouw e-mail
                         </label>
+
                         <input
                             type="email"
                             id="email"
-                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 font-accent  font-extralight text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 font-accent font-extralight text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
                             placeholder="naam@voorbeeld.com"
                             required
                         />
                     </div>
+
                     <div>
                         <label htmlFor="subject" className="block mb-2 text-sm font-body font-medium text-gray-900">
                             Onderwerp
@@ -33,6 +41,7 @@ export default function Contact() {
                             required
                         />
                     </div>
+
                     <div className="sm:col-span-2">
                         <label htmlFor="message" className="block mb-2 text-sm font-body font-medium text-gray-900">
                             Jouw bericht
@@ -44,12 +53,14 @@ export default function Contact() {
                             placeholder="Laat een bericht achter..."
                         ></textarea>
                     </div>
+
                     <button
                         type="submit"
-                        className="py-3 px-5 text-sm font-body text-center text-black rounded-lg bg-groen sm:w-fit hover:bg-groendark focus:ring-4 focus:outline-none focus:ring-primary-300"
+                        className="py-3 px-5 text-sm font-body text-center text-wit rounded-lg bg-groen sm:w-fit hover:bg-groendark focus:ring-4 focus:outline-none focus:ring-primary-300"
                     >
                         Bericht versturen
                     </button>
+
                 </form>
             </div>
         </section>
