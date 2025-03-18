@@ -54,11 +54,24 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center py-10 px-4 md:px-10">
       <div className="max-w-4xl w-full">
-        <h1 className="text-4xl font-bold text-blue-900 mb-2">FAQ</h1>
-        <h2 className="text-2xl font-semibold text-blue-700 mb-6">Veelgestelde Vragen</h2>
-        <p className="text-lg text-gray-700 mb-8">
-          Welkom bij de veelgestelde vragen over de KNMI Weer-app. Hier vind je antwoorden op de meest voorkomende vragen over de weersverwachtingen, meldingen en instellingen.
-        </p>
+        <div className="flex flex-col md:flex-row items-center justify-between mb-8">
+          <div>
+            <h1 className="text-4xl font-bold text-blue-900 mb-2">FAQ</h1>
+            <h2 className="text-2xl font-semibold text-blue-700 mb-4">Veelgestelde Vragen</h2>
+            <p className="text-lg text-gray-700">
+              Welkom bij de veelgestelde vragen over de KNMI Weer-app. Hier vind je antwoorden op de meest voorkomende vragen over de weersverwachtingen, meldingen en instellingen.
+            </p>
+          </div>
+          <div className="mt-6 md:mt-0">
+            <Image 
+              src="/pop.png" 
+              alt="KNMI Weerapp Mascotte" 
+              width={250} 
+              height={250} 
+              className="mx-auto"
+            />
+          </div>
+        </div>
         <div className="space-y-6">
           {faqs.map((section, index) => (
             <div key={index}>
