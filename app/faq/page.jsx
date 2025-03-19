@@ -24,98 +24,147 @@ const faqs = [
     ],
   },
   {
-    category: "☁️ Weersverwachtingen en informatie",
+    category: "📱 App-functionaliteiten",
     items: [
       {
-        question: "Hoe vaak wordt het weer geüpdatet?",
+        question: "Kan ik meerdere locaties toevoegen in de app?",
         answer:
-          "De weersinformatie wordt continu bijgewerkt met de nieuwste gegevens van het KNMI. De verwachting wordt elk uur geüpdatet.",
+          "Ja, je kunt meerdere favoriete locaties instellen om snel het weer op verschillende plekken te checken.",
       },
       {
-        question: "Waar komt de weersinformatie vandaan?",
+        question: "Kan ik de widget gebruiken op mijn startscherm?",
         answer:
-          "Alle gegevens in de app zijn afkomstig van het KNMI, de officiële meteorologische dienst van Nederland.",
+          "Ja, de KNMI Weer-app biedt widgets voor zowel Android als iOS, waarmee je direct het actuele weer kunt bekijken zonder de app te openen.",
       },
       {
-        question: "Wat betekenen de verschillende weerwaarschuwingen?",
+        question: "Hoe stel ik een voorkeurseenheid in (Celsius/Fahrenheit)?",
         answer:
-          "⚪ Wit – Wees alert bij kans op hinder door weersomstandigheden.\n🟠 Oranje – Wees extra voorzichtig, het weer kan gevaarlijk zijn.\n🔴 Rood – Grote impact mogelijk, het weer vormt risico’s voor veiligheid en verkeer.",
-      },
-      {
-        question: "Hoe accuraat zijn de voorspellingen?",
-        answer:
-          "De KNMI Weer-app gebruikt de meest geavanceerde modellen en radarbeelden voor zo nauwkeurig mogelijke voorspellingen.",
+          "Ga naar Instellingen en kies de gewenste temperatuureenheid.",
       },
     ],
   },
   {
-    category: "📡 Weerradar en kaarten",
+    category: "⚡ Extreme Weer",
     items: [
       {
-        question: "Hoe werkt de regenradar?",
+        question: "Wat moet ik doen bij een weeralarm?",
         answer:
-          "De regenradar toont een real-time kaart van neerslag in Nederland. Je kunt vooruit en achteruit scrollen om de regenverwachting te bekijken.",
+          "Volg de waarschuwingen in de app en raadpleeg de officiële richtlijnen van het KNMI.",
       },
       {
-        question: "Kan ik de windrichting en windsnelheid zien?",
+        question: "Geeft de app waarschuwingen voor hittegolven?",
         answer:
-          "Ja, de app toont informatie over windrichting, windsnelheid en windstoten op basis van actuele meetgegevens.",
+          "Ja, bij langdurige hitte kunnen waarschuwingen en adviezen in de app verschijnen.",
+      },
+      {
+        question: "Kan ik waarschuwingen ontvangen voor bliksem in mijn omgeving?",
+        answer:
+          "Ja, de app kan meldingen sturen bij naderend onweer als deze optie is ingeschakeld.",
       },
     ],
   },
   {
-    category: "🔔 Meldingen en instellingen",
+    category: "📊 Weerdata en Wetenschap",
     items: [
       {
-        question: "Kan ik meldingen krijgen voor slecht weer?",
+        question: "Waar haalt de app haar data vandaan?",
         answer:
-          "Ja, je kunt notificaties instellen voor weerwaarschuwingen en specifieke locaties.",
+          "De gegevens komen rechtstreeks van het KNMI, satellieten en meteorologische stations in Nederland.",
       },
       {
-        question: "Hoe pas ik mijn locatie-instellingen aan?",
+        question: "Hoe werkt de neerslagvoorspelling?",
         answer:
-          "Ga naar Instellingen > Mijn Locatie en voeg handmatig plaatsen toe of gebruik GPS voor automatische updates.",
+          "De app gebruikt radarbeelden en modellen om de neerslagintensiteit en -beweging te voorspellen.",
       },
       {
-        question: "Kan ik kiezen tussen een lichte en donkere modus?",
+        question: "Waarom verandert de weersvoorspelling soms?",
         answer:
-          "Ja, de app ondersteunt zowel licht als dark mode, aan te passen rechtsbovenaan de pagina.",
+          "Weervoorspellingen worden continu geüpdatet op basis van de nieuwste satelliet- en radargegevens.",
       },
     ],
   },
+  {
+    category: "🛠️ Probleemoplossing",
+    items: [
+      {
+        question: "Ik krijg geen meldingen, hoe los ik dit op?",
+        answer:
+          "Controleer of meldingen in de instellingen zijn ingeschakeld en of de app toestemming heeft om meldingen te sturen.",
+      },
+      {
+        question: "Waarom werkt de locatiebepaling niet goed?",
+        answer:
+          "Controleer of je GPS is ingeschakeld en of de app toegang heeft tot je locatie.",
+      },
+      {
+        question: "De app crasht, wat kan ik doen?",
+        answer:
+          "Probeer de app opnieuw op te starten, je cache te legen of de nieuwste update te installeren.",
+      },
+    ],
+  },
+  {
+    category: "🌎 Klimaat en Milieu",
+    items: [
+      {
+        question: "Geeft de app informatie over klimaatverandering?",
+        answer:
+          "Ja, in de app zijn soms updates en nieuwsartikelen te vinden over klimaatverandering en extreme weersituaties.",
+      },
+      {
+        question: "Kan ik luchtkwaliteit en pollenvoorspellingen zien?",
+        answer:
+          "Ja, afhankelijk van de regio toont de app soms luchtkwaliteitsinformatie en pollenwaarschuwingen.",
+      },
+    ],
+  },
+  {
+    category: "🔗 Integraties",
+    items: [
+      {
+        question: "Kan ik de app koppelen met mijn smartwatch?",
+        answer:
+          "Ja, de app ondersteunt integraties met bepaalde smartwatches, zoals Apple Watch en Android Wear.",
+      },
+      {
+        question: "Ondersteunt de app Siri of Google Assistant?",
+        answer:
+          "Ja, je kunt spraakcommando’s gebruiken om snel het weer op te vragen.",
+      },
+    ],
+  }
 ];
 
 export default function FAQPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900 flex flex-col items-center py-10 px-4 md:px-10">
       <div className="max-w-4xl w-full">
-        <div className="flex flex-col md:flex-row items-center justify-between mb-8">
+        <div className='flex flex-col md:flex-row items-center justify-between mb-8'>
           <div>
-            <h1 className="text-4xl font-bold text-blue-900 font-['Inter'] mb-2">FAQ</h1>
-            <h2 className="text-2xl font-bold text-blue-700 font-['Inter'] mb-4">Veelgestelde Vragen</h2>
-            <p className="text-lg text-gray-700 font-['Montserrat'] font-['Montserrat']">
+            <h1 className='text-4xl font-bold text-blue-900 mb-2'>FAQ</h1>
+            <h2 className='text-2xl font-bold text-blue-700 mb-4'>Veelgestelde Vragen</h2>
+            <p className='text-lg text-gray-700'>
               Welkom bij de veelgestelde vragen over de KNMI Weer-app. Hier vind je antwoorden op de meest voorkomende vragen over de weersverwachtingen, meldingen en instellingen.
             </p>
           </div>
-          <div className="mt-6 md:mt-0">
+          <div className='mt-6 md:mt-0'>
             <Image 
-              src="/pop.png" 
-              alt="KNMI Weerapp Mascotte" 
+              src='/pop.png' 
+              alt='KNMI Weerapp Mascotte' 
               width={250} 
               height={250} 
-              className="mx-auto"
+              className='mx-auto'
               priority
             />
           </div>
         </div>
+        <h1 className="text-4xl font-bold text-blue-900 mb-4">FAQ</h1>
         <div className="space-y-6">
-          {faqs.length > 0 && faqs.map((section, index) => (
+          {faqs.map((section, index) => (
             <div key={index} className="bg-blue-50 p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-bold text-blue-700 font-['Inter'] mb-3 flex items-center">
-                {section.category}
-              </h3>
+              <h3 className="text-xl font-bold text-blue-700 mb-3">{section.category}</h3>
               <div className="space-y-4">
-                {section.items.length > 0 && section.items.map((faq, i) => (
+                {section.items.map((faq, i) => (
                   <FAQItem key={i} question={faq.question} answer={faq.answer} />
                 ))}
               </div>
@@ -132,21 +181,13 @@ function FAQItem({ question, answer }) {
 
   return (
     <div className="bg-white border border-blue-300 shadow-md rounded-lg p-4 mb-4">
-      <button
-        className="w-full flex justify-between items-center text-lg font-medium focus:outline-none text-blue-900"
-        onClick={() => setIsOpen(!isOpen)}
-      >
+      <button className="w-full flex justify-between items-center text-lg font-medium focus:outline-none text-blue-900" onClick={() => setIsOpen(!isOpen)}>
         {question}
         <span className="text-xl text-[#038a6f]">{isOpen ? "−" : "+"}</span>
       </button>
-      <motion.div
-        initial={{ height: 0, opacity: 0 }}
-        animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
-        className="overflow-hidden mt-2"
-      >
-        <p className="text-gray-700 font-['Montserrat']">{answer}</p>
+      <motion.div initial={{ height: 0, opacity: 0 }} animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }} transition={{ duration: 0.3, ease: "easeInOut" }} className="overflow-hidden mt-2">
+        <p className="text-gray-700">{answer}</p>
       </motion.div>
     </div>
   );
-} 
+}
