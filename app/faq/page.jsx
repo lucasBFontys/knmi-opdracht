@@ -91,9 +91,9 @@ export default function FAQPage() {
       <div className="max-w-4xl w-full">
         <div className="flex flex-col md:flex-row items-center justify-between mb-8">
           <div>
-            <h1 className="text-4xl font-bold text-blue-900 mb-2">FAQ</h1>
-            <h2 className="text-2xl font-semibold text-blue-700 mb-4">Veelgestelde Vragen</h2>
-            <p className="text-lg text-gray-700">
+            <h1 className="text-4xl font-bold text-blue-900 font-['Inter'] mb-2">FAQ</h1>
+            <h2 className="text-2xl font-bold text-blue-700 font-['Inter'] mb-4">Veelgestelde Vragen</h2>
+            <p className="text-lg text-gray-700 font-['Montserrat'] font-['Montserrat']">
               Welkom bij de veelgestelde vragen over de KNMI Weer-app. Hier vind je antwoorden op de meest voorkomende vragen over de weersverwachtingen, meldingen en instellingen.
             </p>
           </div>
@@ -111,7 +111,7 @@ export default function FAQPage() {
         <div className="space-y-6">
           {faqs.length > 0 && faqs.map((section, index) => (
             <div key={index} className="bg-blue-50 p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-semibold text-blue-700 mb-3 flex items-center">
+              <h3 className="text-xl font-bold text-blue-700 font-['Inter'] mb-3 flex items-center">
                 {section.category}
               </h3>
               <div className="space-y-4">
@@ -137,7 +137,7 @@ function FAQItem({ question, answer }) {
         onClick={() => setIsOpen(!isOpen)}
       >
         {question}
-        <span className="text-xl text-blue-700">{isOpen ? "−" : "+"}</span>
+        <span className="text-xl text-[#038a6f]">{isOpen ? "−" : "+"}</span>
       </button>
       <motion.div
         initial={{ height: 0, opacity: 0 }}
@@ -145,8 +145,8 @@ function FAQItem({ question, answer }) {
         transition={{ duration: 0.3, ease: "easeInOut" }}
         className="overflow-hidden mt-2"
       >
-        <p className="text-gray-700">{answer}</p>
+        <p className="text-gray-700 font-['Montserrat']">{answer}</p>
       </motion.div>
     </div>
   );
-}
+} 
