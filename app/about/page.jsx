@@ -19,10 +19,10 @@ export default function About() {
           </p>
           {/* Download knoppen */}
           <div className="mt-6 flex gap-4">
-            <button className="flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
+            <button className="flex items-center gap-2 bg-groen text-white px-6 py-3 rounded-lg hover:bg-groendark">
               Download
             </button>
-            <button className="flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700">
+            <button className="flex items-center gap-2 bg-groen text-white px-6 py-3 rounded-lg hover:bg-groendark">
               Download
             </button>
           </div>
@@ -31,8 +31,7 @@ export default function About() {
         {/* Afbeelding */}
         <div className="flex justify-center">
           <div className="w-full max-w-md bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-            <img
-              src="public/phone-mockup.png"
+            <img src="/phone mockup.png"
               alt="KNMI App op een telefoon"
               className="w-full"
             />
