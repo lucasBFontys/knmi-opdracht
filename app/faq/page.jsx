@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const faqs = [
@@ -148,11 +147,11 @@ export default function FAQPage() {
             </p>
           </div>
           <div className='mt-6 md:mt-0'>
-            <Image 
-              src='/pop.png' 
-              alt='KNMI Weerapp Mascotte' 
-              width={250} 
-              height={250} 
+            <Image
+              src='/pop.png'
+              alt='KNMI Weerapp Mascotte'
+              width={250}
+              height={250}
               className='mx-auto'
               priority
             />
