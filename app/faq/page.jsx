@@ -73,10 +73,11 @@ export default function FAQPage() {
       <div className="mt-10 text-center">
         <p className="text-[18px] text-gray-700 mb-4">Heb je nog verdere vragen?</p>
         <Link href="/contact">
-  <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 text-[18px] font-['Inter']">
+  <button className="bg-[#038a6f] hover:bg-[#026e59] text-white font-normal py-3 px-6 rounded-md transition duration-300 text-[18px] font-['Montserrat']">
     Ga naar de contactpagina
   </button>
 </Link>
+
       </div>
     </div>
   );
