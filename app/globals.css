@@ -8,6 +8,7 @@
     --color-blauw: #081534;
     --color-lblauw: #92aec3;
     --color-wit: #FFFFFF;
+    --color-offwit: #F4F9FF;
     --color-groen: #038a6f;
 
     --color-groendark: #006551;
@@ -27,5 +28,5 @@
 
 
 body {
-    background-color: var(--color-wit);
+    background-color: var(--color-offwit);
 }

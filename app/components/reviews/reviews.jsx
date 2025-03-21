@@ -1,6 +1,6 @@
 export default function Page() {
     return (
-        <section className="bg-white">
+        <section>
             <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
 
                 <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
