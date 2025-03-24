@@ -26,10 +26,12 @@ export default function Page() {
                             Download
                         </a>
 
-                        <button
-                            className="w-12 h-12 flex items-center justify-center text-gray-800 border-gray-100 hover:bg-gray-300 focus:ring-2 focus:ring-gray-400 rounded-full">
-                            <svg height="2000px" viewBox="0 0 512 512" width="1000px" >
-                                <path d="M349.852,343.15c-49.875,49.916-131.083,49.916-181,0c-49.916-49.918-49.916-131.125,0-181.021  c13.209-13.187,29.312-23.25,47.832-29.812c5.834-2.042,12.293-0.562,16.625,3.792c4.376,4.375,5.855,10.833,3.793,16.625  c-12.542,35.375-4,73.666,22.25,99.917c26.209,26.228,64.5,34.75,99.916,22.25c5.792-2.062,12.271-0.582,16.625,3.793  c4.376,4.332,5.834,10.812,3.771,16.625C373.143,313.838,363.06,329.941,349.852,343.15z M191.477,184.754  c-37.438,37.438-37.438,98.354,0,135.771c40,40.021,108.125,36.416,143-8.168c-35.959,2.25-71.375-10.729-97.75-37.084  c-26.375-26.354-39.333-61.771-37.084-97.729C196.769,179.796,194.039,182.192,191.477,184.754z" fill="#1D1D1B" />
+                        <button className="w-12 h-12 flex items-center justify-center text-gray-800 border-gray-100 hover:bg-gray-300 focus:ring-2 focus:ring-gray-400 rounded-full">
+                            <svg height="2000px" viewBox="0 0 512 512" width="1000px">
+                                <path
+                                    d="M349.852,343.15c-49.875,49.916-131.083,49.916-181,0c-49.916-49.918-49.916-131.125,0-181.021  c13.209-13.187,29.312-23.25,47.832-29.812c5.834-2.042,12.293-0.562,16.625,3.792c4.376,4.375,5.855,10.833,3.793,16.625  c-12.542,35.375-4,73.666,22.25,99.917c26.209,26.228,64.5,34.75,99.916,22.25c5.792-2.062,12.271-0.582,16.625,3.793  c4.376,4.332,5.834,10.812,3.771,16.625C373.143,313.838,363.06,329.941,349.852,343.15z M191.477,184.754  c-37.438,37.438-37.438,98.354,0,135.771c40,40.021,108.125,36.416,143-8.168c-35.959,2.25-71.375-10.729-97.75-37.084  c-26.375-26.354-39.333-61.771-37.084-97.729C196.769,179.796,194.039,182.192,191.477,184.754z"
+                                    fill="#1D1D1B"
+                                />
                             </svg>
                         </button>
 
@@ -75,7 +77,7 @@ export default function Page() {
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li>
                                 <Link
-                                    href="/over"
+                                    href="/about"
                                     className="block py-2 pr-4 pl-3 text-blauw border-b hover:underline lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:"
                                     aria-current="page"
                                 >
@@ -100,7 +102,7 @@ export default function Page() {
                             </li>
                             <li>
                                 <Link
-                                    href="/nieuws"
+                                    href="/Nieuws"
                                     className="block py-2 pr-4 pl-3 text-blauw border-b hover:underline lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:"
                                 >
                                     Nieuws & Updates
