@@ -1,5 +1,8 @@
+import Mockup from "./components/mockup/mockup.jsx";
 export default function Home() {
   return (
-    <div></div>
+    <div>
+      <Mockup/>
+    </div>
   );
 }
