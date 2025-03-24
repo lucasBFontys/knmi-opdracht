@@ -1,11 +1,13 @@
 export default function About() {
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-6">
+      {/* Blauwe bollen */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
-                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% bottom-20 -left-30"></div>
-                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% -top-10 -right-30"></div>
-            </div>
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div className="absolute w-[400px] h-[400px] rounded-full bg-gradient-radial from-blue-300 to-transparent bottom-20 -left-32 opacity-50"></div>
+        <div className="absolute w-[400px] h-[400px] rounded-full bg-gradient-radial from-blue-300 to-transparent -top-10 -right-32 opacity-50"></div>
+      </div>
+
+      <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Tekstgedeelte */}
         <div>
           <h2 className="text-3xl font-bold text-gray-900">Over ons</h2>
@@ -20,6 +22,7 @@ export default function About() {
             et debitis inventore ex quasi laboriosam qui inventore magnam? Non atque fugiat ut iste
             velit aut dolorem quas et animi dicta qui quia rerum.
           </p>
+
           {/* Download knoppen */}
           <div className="mt-6 flex gap-4">
             <button className="flex items-center gap-2 bg-groen text-white px-6 py-3 rounded-lg hover:bg-groendark">
@@ -31,10 +34,10 @@ export default function About() {
           </div>
         </div>
 
-        {/* Afbeelding */}
+        {/* Afbeelding naast tekst */}
         <div className="flex justify-center">
-          <div className="w-full max-w-md bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-            <img src="/phone mockup.png" 
+          <div className="w-[350px] bg-gray-300 rounded-lg overflow-hidden shadow-lg">
+            <img src="/knmi about.png" 
               alt="KNMI App op een telefoon"
               className="w-full"
             />
@@ -44,4 +47,6 @@ export default function About() {
     </div>
   );
 }
+
+
 
