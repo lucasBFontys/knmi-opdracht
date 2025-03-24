@@ -25,7 +25,7 @@ const faqs = [
       {
         question: "Is de KNMI Weer-app betrouwbaar?",
         answer:
-          "Ja, de app wordt ontwikkeld en onderhouden door het KNMI, de officiële bron voor weergegevens in Nederland.",
+          "Ja, de app wordt ontwikkeld en onderhouden door het KNMI Nederland, de officiële bron voor weergegevens in Nederland.",
       },
       {
         question: "Waarom heeft de KNMI Weer-app geen reclame?",

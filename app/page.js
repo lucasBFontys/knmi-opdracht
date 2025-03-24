@@ -8,7 +8,6 @@ export default function Home() {
     <main>
       <Mockup/>
       <Reviews />
-      
     </main>
   );
 }
