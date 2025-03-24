@@ -1,7 +1,10 @@
 export default function About() {
-
   return (
-    <div className="min-h-screen bg-gradient-to-br from-white to-blue-100 flex items-center justify-center px-6">
+    <div className="min-h-screen bg-white flex items-center justify-center px-6">
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% bottom-20 -left-30"></div>
+                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% -top-10 -right-30"></div>
+            </div>
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
         {/* Tekstgedeelte */}
         <div>
@@ -31,7 +34,7 @@ export default function About() {
         {/* Afbeelding */}
         <div className="flex justify-center">
           <div className="w-full max-w-md bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-            <img src="/phone mockup.png"
+            <img src="/phone mockup.png" 
               alt="KNMI App op een telefoon"
               className="w-full"
             />
@@ -41,3 +44,4 @@ export default function About() {
     </div>
   );
 }
+
