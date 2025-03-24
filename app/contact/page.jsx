@@ -1,6 +1,6 @@
 export default function Contact() {
     return (
-        <section className=" overflow-hidden  relative">
+        <section className=" overflow-hidden">
 
             <div className="absolute inset-0 -z-10 pointer-events-none">
                 <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% bottom-20 -left-30"></div>

@@ -1,8 +1,15 @@
-import Mockup from "./components/mockup/mockup.jsx";
+import Mockup from "./components/mockup/mockup.jsx"
+import Reviews from "./components/reviews/reviews.jsx";
+import Download from "./components/download/download.jsx";
+
+import "./globals.css";
+
 export default function Home() {
   return (
-    <div>
+    <main>
       <Mockup/>
-    </div>
+      <Reviews />
+      <Download />
+    </main>
   );
 }
