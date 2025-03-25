@@ -23,7 +23,7 @@ export default function Page() {
   return (
     <section>
       <div className="  py-10 px-4 mx-auto max-w-screen-xl lg:py-10 lg:px-6 text-center">
-        <h1 class="mb-10 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl  font-heading">
+        <h1 class=" mt-20 mb-10 text-2xl font-bold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl  font-heading">
           Met de KNMI-app ben je voorbereid op <br /> gevaarlijk weer
         </h1>
         <p class="mb-10 text-[16px] font-normal text-gray-500 sm:px-16 xl:px-48 font-body">
