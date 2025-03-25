@@ -48,7 +48,7 @@ export default function FAQPage() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white text-gray-900 py-10 px-4 md:px-10">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-offwit text-gray-900 py-10 px-4 md:px-10 mt-20">
       <div className="max-w-3xl w-full text-center">
       <h1 className="text-[36px] font-bold text-black mb-2 font-['Inter']">FAQ</h1>
       <h2 className="text-[28px] font-bold text-blue-700 mb-4 font-['Inter']">Veelgestelde Vragen</h2>
