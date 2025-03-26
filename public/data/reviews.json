@@ -1,0 +1,76 @@
+{
+    "reviews": [
+        {
+            "name": "Sophie",
+            "text": "De KNMI-app is een absolute lifesaver! Als iemand die in een gebied woont waar vaak extreem weer voorkomt, heb ik deze app al meerdere keren kunnen gebruiken om me voor te bereiden op gevaarlijke weersomstandigheden.",
+            "image": "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "rating": 5
+        },
+        {
+            "name": "Tom",
+            "text": "Super handige app! De voorspellingen zijn erg accuraat en de meldingen helpen me altijd voorbereid op pad te gaan. Ik check elke ochtend even snel het weer voor de dag.",
+            "image": "https://images.pexels.com/photos/1722198/pexels-photo-1722198.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "rating": 4
+        },
+        {
+            "name": "Emma",
+            "text": "Ik vertrouw altijd op deze app als ik op reis ga. Heel overzichtelijk en gebruiksvriendelijk! De radar functie is echt top om te zien wanneer er regen aankomt.",
+            "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=2561&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "rating": 5
+        },
+        {
+            "name": "Daan",
+            "text": "Handig en duidelijk, maar soms klopt de regenradar niet helemaal. Toch gebruik ik hem dagelijks en ben ik over het algemeen tevreden met de functionaliteit.",
+            "image": "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "rating": 3
+        },
+        {
+            "name": "Lisa",
+            "text": "Fantastische app! De waarschuwingen helpen me altijd op tijd mijn plannen aan te passen. Als buitensportliefhebber is dit echt een must-have app.",
+            "image": "https://images.unsplash.com/photo-1543949806-2c9935e6aa78?q=80&w=2576&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "rating": 5
+        },
+        {
+            "name": "Martijn",
+            "text": "Als boer is deze app onmisbaar voor mijn dagelijkse werkzaamheden. De langetermijnvoorspellingen zijn betrouwbaar genoeg om mijn planning op af te stemmen.",
+            "image": "https://images.unsplash.com/photo-1686063165043-45243dab25ab?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "rating": 5
+        },
+        {
+            "name": "Anouk",
+            "text": "Ik gebruik de app vooral voor de UV-index omdat ik een gevoelige huid heb. Heel fijn dat deze informatie zo makkelijk beschikbaar is!",
+            "image": "https://images.pexels.com/photos/8192242/pexels-photo-8192242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "rating": 4
+        },
+        {
+            "name": "Jeroen",
+            "text": "De weeralarmen zijn echt een uitkomst. Vorige maand kreeg ik een melding voor naderend noodweer en kon ik op tijd maatregelen nemen.",
+            "image": "https://images.pexels.com/photos/7163464/pexels-photo-7163464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+            "rating": 5
+        },
+        {
+            "name": "Fleur",
+            "text": "Als fotograaf check ik altijd de app om te zien wanneer het 'golden hour' is en of er mooie wolkenformaties aankomen. Zeer betrouwbaar!",
+            "image": "https://images.unsplash.com/photo-1521252659862-eec69941b071?q=80&w=1872&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "rating": 4
+        },
+        {
+            "name": "Bram",
+            "text": "De app werkt prima, maar ik mis soms wat detail in de buienradar. Voor de rest een prima tool om het weer in de gaten te houden.",
+            "image": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "rating": 3
+        },
+        {
+            "name": "Noor",
+            "text": "Als hardloper plan ik mijn routes op basis van de windrichting en -kracht. Deze app geeft me precies de informatie die ik nodig heb!",
+            "image": "https://images.unsplash.com/photo-1561756814-5e9506a53439?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "rating": 5
+        },
+        {
+            "name": "Willem",
+            "text": "De seizoensvoorspellingen zijn erg handig voor mijn werk als evenementenplanner. Ik kan maanden vooruit al een inschatting maken van het weer.",
+            "image": "https://images.unsplash.com/photo-1646197879190-78a962aab29b?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "rating": 4
+        }
+    ]
+}
