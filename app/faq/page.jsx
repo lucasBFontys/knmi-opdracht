@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function FAQPage() {
+  const [searchTerm, setSearchTerm] = useState("");
+
   const faqs = [
     {
       category: "🌍 Algemeen",
@@ -55,16 +57,28 @@ export default function FAQPage() {
         <p className="text-[18px] text-[#000000] mb-8 font-['Montserrat'] leading-relaxed">
           Welkom bij de veelgestelde vragen over de KNMI Weer-app. Hier vind je antwoorden op de meest voorkomende vragen over de weersverwachtingen, meldingen en instellingen.
         </p>
+
+        <div className="mb-8">
+          <input
+            type="text"
+            placeholder="Zoek een vraag..."
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className="w-full md:w-2/3 px-4 py-3 rounded-lg border border-blue-200 text-[16px] font-['Montserrat'] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#038a6f] transition"
+          />
+        </div>
       </div>
 
       <div className="max-w-3xl w-full">
         {faqs.map((section, index) => (
-       <div key={index} className="bg-white border border-blue-200 p-6 rounded-xl shadow-md mb-6">
+          <div key={index} className="bg-white border border-blue-200 p-6 rounded-xl shadow-md mb-6">
             <h3 className="text-[20px] font-semibold text-[#0c2340] mb-3 font-['Inter']">{section.category}</h3>
             <div className="space-y-4">
-              {section.items.map((faq, i) => (
-                <FAQItem key={i} question={faq.question} answer={faq.answer} />
-              ))}
+              {section.items
+                .filter((faq) => faq.question.toLowerCase().includes(searchTerm.toLowerCase()))
+                .map((faq, i) => (
+                  <FAQItem key={i} question={faq.question} answer={faq.answer} />
+                ))}
             </div>
           </div>
         ))}
