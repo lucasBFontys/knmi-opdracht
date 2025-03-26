@@ -55,7 +55,7 @@ export default function InfiniteReviews() {
     return (
         <section className="relative py-12 md:py-16 lg:py-24 w-full overflow-hidden my-8 md:my-12 lg:my-16">
             <div className="text-center mx-auto max-w-screen-sm mb-10 lg:mb-16">
-                <h2 className="mb-6 text-4xl font-bold text-black">Onze stralende reviews</h2>
+                <h2 className="mb-6 text-4xl font-bold font-heading text-black">Onze stralende reviews</h2>
             </div>
 
             <div className="relative w-full overflow-hidden">
@@ -115,7 +115,7 @@ function ReviewCard({ review }) {
                         alt={review.name}
                         className="w-12 h-12 rounded-full object-cover border-gray-300 mr-4"
                     />
-                    <h3 className="text-xl font-bold text-gray-900">{review.name}</h3>
+                    <h3 className="text-xl font-bold font-heading text-gray-900">{review.name}</h3>
                 </div>
                 <div className="flex items-center ml-auto">
                     {[...Array(review.rating)].map((_, i) => (
@@ -132,7 +132,7 @@ function ReviewCard({ review }) {
                 </div>
             </div>
 
-            <p className="text-gray-600 italic">"{review.text}"</p>
+            <p className="text-gray-600 italic font-body">"{review.text}"</p>
         </div>
     );
 }
