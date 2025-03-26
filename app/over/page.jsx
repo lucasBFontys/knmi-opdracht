@@ -1,4 +1,4 @@
-export default function About() {
+export default function Over() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-blue-100 flex items-center justify-center px-6">
       {/* Content grid */}
