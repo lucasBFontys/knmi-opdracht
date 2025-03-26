@@ -52,7 +52,7 @@ export default function FAQPage() {
       <div className="max-w-3xl w-full text-center">
         <h1 className="text-[32px] font-bold mb-2 font-['Inter']">FAQ</h1>
         <h2 className="text-[24px] font-semibold mb-4 font-['Inter']">Veelgestelde Vragen</h2>
-        <p className="text-[18px] text-[#4b5563] mb-8 font-['Montserrat'] leading-relaxed">
+        <p className="text-[18px] text-[#000000] mb-8 font-['Montserrat'] leading-relaxed">
           Welkom bij de veelgestelde vragen over de KNMI Weer-app. Hier vind je antwoorden op de meest voorkomende vragen over de weersverwachtingen, meldingen en instellingen.
         </p>
       </div>
