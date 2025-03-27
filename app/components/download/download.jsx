@@ -4,15 +4,27 @@ import Image from "next/image";
 
 export default function Page() {
   const handleRedirect = () => {
-    const userAgent = typeof window !== "undefined" ? navigator.userAgent || navigator.vendor || window.opera : "";
+    const userAgent =
+      typeof window !== "undefined"
+        ? navigator.userAgent || navigator.vendor || window.opera
+        : "";
 
     if (/android/i.test(userAgent)) {
-      window.open("https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US", "_blank");
+      window.open(
+        "https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US",
+        "_blank"
+      );
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      window.open("https://apps.apple.com/nl/app/knmi-weer/id1643626602", "_blank");
+      window.open(
+        "https://apps.apple.com/nl/app/knmi-weer/id1643626602",
+        "_blank"
+      );
     } else {
       // Desktop fallback: Google Play (kan gewoon openen in browser)
-      window.open("https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US", "_blank");
+      window.open(
+        "https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US",
+        "_blank"
+      );
     }
   };
 
