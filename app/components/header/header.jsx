@@ -3,7 +3,7 @@ const Logo = "/logo.svg";
 
 export default function Page() {
   return (
-    <header>
+    <header className="fixed top-0 left-0 w-full bg-offwit z-50">
       <nav className="px-4 lg:px-6 py-2.5 dark:">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <Link href="/" className="flex items-center">
@@ -21,9 +21,9 @@ export default function Page() {
 
             <a
               href="#"
-              className="text-white bg-blauw hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-body font-medium rounded-full hover:ring-blauw hover:ring-2 text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-3 dark: focus:outline-none"
+              className="text-white bg-groen hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-body font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-3 dark: focus:outline-none"
             >
-              Download
+              Download app
             </a>
 
             <button className="w-12 h-12 flex items-center justify-center text-gray-800 border-gray-100 hover:bg-gray-300 focus:ring-2 focus:ring-gray-400 rounded-full">
