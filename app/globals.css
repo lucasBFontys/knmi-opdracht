@@ -39,25 +39,31 @@
 
 @theme {
     --color-blauw: #081534;
-    --color-lblauw: #92aec3;
-    --color-wit: #FFFFFF;
+    --color-lblauw: #92AEC3;
     --color-offwit: #F4F9FF;
-    --color-groen: #038a6f;
-
+    --color-groen: #038A6F;
     --color-groendark: #006551;
-    --color-blauwaidsvelk: #759CE0;
 
-    --font-body: 'montserrat', sans-serif;
-    --font-accent: 'Poppins', sans-serif;
-    --font-heading: 'Inter', sans-serif;
+
+    --font-body: "Montserrat", sans-serif;
+    --font-accent: "Poppins", sans-serif;
+    --font-heading: "Inter", sans-serif;
 }
 
-:root {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
+@layer base {
+    .dark {
+        --color-drblauw: #0A1C45;
+        --color-drlblauw: #4A6A85;
+        --color-drbr: #121826;
+        --color-drgroen: #03A184;
+        --color-drgroendark: #017A63;
+    }
 
-body {
-    background-color: var(--color-offwit);
+    body {
+        background-color: var(--color-offwit);
+    }
+
+    .dark body {
+        background-color: var(--color-offwit);
+    }
 }

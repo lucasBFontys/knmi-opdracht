@@ -11,7 +11,7 @@ export default function Page() {
           </Link>
 
           <div className="flex items-center lg:order-2">
-            <a className="w-10 h-10 flex items-center justify-center text-gray-800 border-2 border-gray-100 hover:bg-gray-300 focus:ring-2 focus:ring-gray-400 rounded-full mr-6 overflow-hidden">
+            <a className="w-10 h-10 flex items-center justify-center text-gray-800 hover:bg-gray-300 focus:ring-2 focus:ring-gray-400 rounded-full mr-6 overflow-hidden shadow-lg">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Flag_of_the_Netherlands.svg/1200px-Flag_of_the_Netherlands.svg.png"
                 alt="taal"
@@ -20,8 +20,8 @@ export default function Page() {
             </a>
 
             <a
-              href="#"
-              className="text-white bg-groen hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-body font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-3 dark: focus:outline-none"
+              href="https://apps.apple.com/nl/app/knmi-weer/id1225568094"
+              className="text-white bg-groen hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-body font-medium rounded-full text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-3 dark: focus:outline-none shadow-lg"
             >
               Download app
             </a>
