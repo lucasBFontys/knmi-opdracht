@@ -1,20 +1,23 @@
+import { ThemeProvider } from "./components/theme/provider.jsx"
 import Footer from "./components/footer/footer.jsx";
 import Header from "./components/header/header.jsx";
-import "./globals.css";
+import "./globals.css"
 
 export const metadata = {
-  title: "KNMI Weer App",
-  description: "De KNMI Weer App is de beste weer app van Nederland.",
-};
+  title: "KNMI Opdracht",
+  description: "KNMI Opdracht applicatie",
+}
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="nl" suppressHydrationWarning>
       <body>
         <Header />
-        {children}
+        <ThemeProvider>{children}</ThemeProvider>
         <Footer />
       </body>
     </html>
-  );
+  )
 }
+
+
