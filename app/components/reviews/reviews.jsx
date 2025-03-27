@@ -55,7 +55,7 @@ export default function InfiniteReviews() {
     return (
         <section className="relative py-12 md:py-16 lg:py-24 w-full overflow-hidden my-8 md:my-12 lg:my-16">
             <div className="text-center mx-auto max-w-screen-sm mb-10 lg:mb-16">
-                <h2 className="mb-6 text-4xl font-bold font-heading text-black">Onze stralende reviews</h2>
+                <h2 className="mb-6 text-4xl font-bold font-heading text-[#0c2340]">Onze stralende reviews ☀️</h2>
             </div>
 
             <div className="relative w-full overflow-hidden">
