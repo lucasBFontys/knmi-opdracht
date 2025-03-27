@@ -20,7 +20,6 @@ export default function Page() {
         "_blank"
       );
     } else {
-      // Desktop fallback: Google Play (kan gewoon openen in browser)
       window.open(
         "https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US",
         "_blank"
@@ -29,7 +28,7 @@ export default function Page() {
   };
 
   return (
-    <div className="relative py-20 px-6 md:px-12 font-['Montserrat']">
+    <div className="relative pb-50 px-6 md:px-12 font-['Montserrat']">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 relative z-10">
         {/* Tekst + knop */}
         <div className="md:text-left">
@@ -66,3 +65,4 @@ export default function Page() {
     </div>
   );
 }
+
