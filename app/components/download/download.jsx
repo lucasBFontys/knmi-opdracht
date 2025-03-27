@@ -4,20 +4,32 @@ import Image from "next/image";
 
 export default function Page() {
   const handleRedirect = () => {
-    const userAgent = typeof window !== "undefined" ? navigator.userAgent || navigator.vendor || window.opera : "";
+    const userAgent =
+      typeof window !== "undefined"
+        ? navigator.userAgent || navigator.vendor || window.opera
+        : "";
 
     if (/android/i.test(userAgent)) {
-      window.open("https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US", "_blank");
+      window.open(
+        "https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US",
+        "_blank"
+      );
     } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      window.open("https://apps.apple.com/nl/app/knmi-weer/id1643626602", "_blank");
+      window.open(
+        "https://apps.apple.com/nl/app/knmi-weer/id1643626602",
+        "_blank"
+      );
     } else {
       // Desktop fallback: Google Play (kan gewoon openen in browser)
-      window.open("https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US", "_blank");
+      window.open(
+        "https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US",
+        "_blank"
+      );
     }
   };
 
   return (
-    <div className="relative bg-white py-20 px-6 md:px-12 font-['Montserrat']">
+    <div className="relative py-20 px-6 md:px-12 font-['Montserrat']">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 relative z-10">
         {/* Tekst + knop */}
         <div className="md:text-left">

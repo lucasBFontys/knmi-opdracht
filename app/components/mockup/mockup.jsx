@@ -79,7 +79,7 @@ export default function Page() {
                 y="215"
                 fill={imageIndex === 0 ? "var(--color-blauw)" : "#B0B0B0"}
                 fontSize="20"
-                fontFamily="Arial"
+                fontFamily="font-['Montserrat']"
                 textAnchor="end"
               >
                 <tspan fontWeight="bold">Neerslagradar</tspan>
