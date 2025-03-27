@@ -1,6 +1,6 @@
 export default function Over() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-6">
+    <div className="min-h-screen flex items-center justify-center px-6 pt-20 pb-20">
       {/* Content grid */}
       <div className="max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
         {/* Titels + tekst */}
@@ -11,24 +11,22 @@ export default function Over() {
               KNMI App
             </h3>
             <p className="text-gray-700 mt-4">
-              De KNMI Weerapp is dé officiële weerapp van het Koninklijk
-              Nederlands Meteorologisch Instituut. Ontwikkeld door de overheid,
-              speciaal voor iedereen in Nederland. Of je nu een bui wilt
-              ontwijken, actuele waarschuwingen nodig hebt of gewoon het weer in
-              de gaten wilt houden.
+              Het Koninklijk Nederlands Meteorologisch Instituut (KNMI) is sinds 
+              1854 de autoriteit op het gebied van weer, klimaat en seismologie in Nederland. 
+              Met 48 meetstations levert het 24/7 betrouwbare metingen en voorspellingen die 
+              essentieel zijn voor veiligheid en leefbaarheid.
             </p>
             <p className="text-gray-700 mt-2">
-              De KNMI Weerapp biedt betrouwbare en onafhankelijke informatie,
-              direct van de bron. Zo ben je altijd goed voorbereid, waar je ook
-              bent.
+              De weerkamer van het KNMI staat continu paraat om tijdige en gerichte 
+              waarschuwingen te geven bij gevaarlijk of extreem weer. Daarnaast voorzien 
+              onze meteorologen diverse sectoren, zoals luchtvaart, scheepvaart en transport, 
+              van op maat gemaakte weerinformatie om veiligheidsrisico's te minimaliseren.
             </p>
-          </div>
-
-          {/* Download knoppen (mogen uitsteken) */}
-          <div className="mt-6 flex gap-4 self-start">
-            <button className="bg-[#038a6f] hover:bg-[#026e59] text-white font-body font-medium text-[16px] rounded-full px-6 py-3 flex items-center gap-2 ">
-              Probeer het nu
-            </button>
+             <p className="text-gray-700 mt-2">
+              Door voortdurende innovatie en wetenschappelijk onderzoek blijft het 
+              KNMI Nederland voorzien van accurate adviezen en waarschuwingen, met 
+              als doel een veilige en leefbare omgeving te waarborgen.
+            </p>
           </div>
         </div>
 
@@ -36,7 +34,7 @@ export default function Over() {
         <div className="flex justify-center items-center">
           <div className="w-[350px] bg-gray-300 rounded-lg overflow-hidden shadow-lg">
             <img
-              src="/knmi about.png"
+              src="/knmi app icon.png"
               alt="KNMI App op een telefoon"
               className="w-full"
             />
