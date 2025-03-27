@@ -16,7 +16,7 @@ export default function Nieuws() {
               <p className="text-sm font-semibold text-gray-700 font-accent">KNMI Weer - 12 maart 2025</p>
               <p className="text-xl font-bold text-gray-900 mt-2 font-heading">Nieuw in de KNMI App!</p>
               <p className="text-gray-700 mt-2 font-body">
-                De nieuwste update brengt nauwkeurigere weerwaarschuwingen, een verbeterde radar, en snellere pushmeldingen. Stel jouw favoriete locaties in en ontvang persoonlijke updates. Download nu de update en blijf altijd voorbereid!
+                De nieuwste update brengt nauwkeurigere weerwaarschuwingen, een verbeterde radar, en snellere pushmeldingen. Stel jouw favoriete locaties in en ontvang persoonlijke updates.
               </p>
             </div>
             <img src="/nieuws-1.png" alt="Nieuws 1" />
