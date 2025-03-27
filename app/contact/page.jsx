@@ -1,68 +1,58 @@
-export default function Contact() {
+"use client";
+
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+
+export default function Features() {
+  // Custom component voor geanimeerde paragraaf
+  function AnimatedParagraph({ children }) {
+    const controls = useAnimation();
+    const { ref, inView } = useInView({
+      triggerOnce: false, // Blijft reageren op scroll
+      threshold: 0.99, // Tekst moet voor 99% in beeld zijn om te activeren
+    });
+
+    useEffect(() => {
+      if (inView) {
+        controls.start({ color: "#000000", transition: { duration: 0.6 } });
+      } else {
+        controls.start({ color: "#F1F6FD", transition: { duration: 0.6 } });
+      }
+    }, [controls, inView]);
+
     return (
-        <section className=" overflow-hidden">
-
-            <div className="absolute inset-0 -z-10 pointer-events-none">
-                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% bottom-20 -left-30"></div>
-                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% -top-10 -right-30"></div>
-            </div>
-
-            <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                <h2 className="mb-4 text-4xl tracking-tight font-heading font-bold text-center text-black">
-                    Neem contact op
-                </h2>
-                <p className="mb-8 lg:mb-16 font-body text-center text-pretty text-black sm:text-xl">
-                    Heb je een technisch probleem? Wil je feedback geven over de app? Meer weten over ons de KNMI? Laat het ons weten.
-                </p>
-                <form action="#" className="space-y-8">
-                    <div>
-                        <label htmlFor="email" className="block mb-2 text-sm font-body font-medium text-gray-900">
-                            Jouw e-mail
-                        </label>
-
-                        <input
-                            type="email"
-                            id="email"
-                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 font-accent font-extralight text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
-                            placeholder="naam@voorbeeld.com"
-                            required
-                        />
-                    </div>
-
-                    <div>
-                        <label htmlFor="subject" className="block mb-2 text-sm font-body font-medium text-gray-900">
-                            Onderwerp
-                        </label>
-                        <input
-                            type="text"
-                            id="subject"
-                            className="block p-3 w-full text-sm font-accent font-extralight text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500"
-                            placeholder="Laat ons weten hoe we je kunnen helpen"
-                            required
-                        />
-                    </div>
-
-                    <div className="sm:col-span-2">
-                        <label htmlFor="message" className="block mb-2 text-sm font-body font-medium text-gray-900">
-                            Jouw bericht
-                        </label>
-                        <textarea
-                            id="message"
-                            rows="6"
-                            className="block p-2.5 w-full text-sm font-accent font-extralight text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500"
-                            placeholder="Laat een bericht achter..."
-                        ></textarea>
-                    </div>
-
-                    <button
-                        type="submit"
-                        className="py-3 px-5 text-sm font-body text-center text-wit rounded-lg bg-groen sm:w-fit hover:bg-groendark focus:ring-4 focus:outline-none focus:ring-primary-300"
-                    >
-                        Bericht versturen
-                    </button>
-
-                </form>
-            </div>
-        </section>
+      <motion.p
+        ref={ref}
+        animate={controls}
+        initial={{ color: "#F1F6FD" }}
+        className="mb-6 text-1xl md:text-2xl font-semibold" 
+      >
+        {children}
+      </motion.p>
     );
+  }
+
+  return (
+    <div className="w-full px-6 bg-[var(--color-offwit)] text-left flex items-center">
+      <div className="max-w-2xl mx-auto text-lg md:text-xl pt- lg:pt-48">
+        <AnimatedParagraph>
+          Weerapps zijn er genoeg. Maar hoe vaak open je er één en word je overspoeld met advertenties, 
+          vage voorspellingen en overbodige extra’s?
+        </AnimatedParagraph>
+        <AnimatedParagraph>Dat kan anders.</AnimatedParagraph>
+        <AnimatedParagraph>
+          De KNMI-app is er voor iedereen. Gemaakt voor het volk, 
+          zonder advertenties, zonder ruis. Gewoon betrouwbaar weer, direct van de bron.
+        </AnimatedParagraph>
+        <AnimatedParagraph>
+          Met een unieke functie die écht telt: officiële weerswaarschuwingen 
+          bij gevaarlijk weer. Storm, gladheid, extreme hitte—je weet het als eerste.
+        </AnimatedParagraph>
+        <AnimatedParagraph>
+          Duidelijk, snel, betrouwbaar. Zodat jij altijd voorbereid bent.
+        </AnimatedParagraph>
+      </div>
+    </div>
+  );
 }
