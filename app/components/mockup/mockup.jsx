@@ -90,25 +90,22 @@ export default function Page() {
             {/* Linksboven */}
             <div className="absolute left-[250px] top-[190px] text-right max-w-[273px] transform translate-x-[-100%]">
               <h3
-                className={`text-xl font-bold ${
-                  imageIndex === 0
-                    ? "text-[var(--color-blauw)]"
-                    : "text-[#B0B0B0]"
-                }`}
+                className={` font-heading text-xl font-bold ${imageIndex === 0
+                  ? "text-[var(--color-blauw)]"
+                  : "text-[#B0B0B0]"
+                  }`}
               >
                 Neerslagradar{" "}
                 <span
-                  className={`transition-opacity duration-300 ${
-                    imageIndex === 0 ? "opacity-100" : "opacity-50"
-                  }`}
+                  className={`transition-opacity duration-300 ${imageIndex === 0 ? "opacity-100" : "opacity-50"
+                    }`}
                 >
                   🌧️
                 </span>
               </h3>
               <p
-                className={`text-left mt-2 ${
-                  imageIndex === 0 ? "text-black" : "text-[#B0B0B0]"
-                }`}
+                className={`text-left mt-2 font-body ${imageIndex === 0 ? "text-black" : "text-[#B0B0B0]"
+                  }`}
               >
                 Toont actuele neerslag zoals regen of sneeuw in de omgeving
               </p>
@@ -117,25 +114,22 @@ export default function Page() {
             {/* Linksmidden */}
             <div className="absolute left-[250px] top-[360px] text-right max-w-[300px] transform translate-x-[-100%]">
               <h3
-                className={`text-xl font-bold ${
-                  imageIndex === 1
-                    ? "text-[var(--color-blauw)]"
-                    : "text-[#B0B0B0]"
-                }`}
+                className={` font-heading text-xl font-bold ${imageIndex === 1
+                  ? "text-[var(--color-blauw)]"
+                  : "text-[#B0B0B0]"
+                  }`}
               >
                 UV-Index{" "}
                 <span
-                  className={`transition-opacity duration-300 ${
-                    imageIndex === 1 ? "opacity-100" : "opacity-50"
-                  }`}
+                  className={`transition-opacity duration-300 ${imageIndex === 1 ? "opacity-100" : "opacity-50"
+                    }`}
                 >
                   ☀️
                 </span>
               </h3>
               <p
-                className={`text-left mt-2 ${
-                  imageIndex === 1 ? "text-black" : "text-[#B0B0B0]"
-                }`}
+                className={`font-body text-left mt-2 ${imageIndex === 1 ? "text-black" : "text-[#B0B0B0]"
+                  }`}
               >
                 Toont de sterkte van de zonnestraling <br />
                 en het risico op huidbeschadiging
@@ -145,52 +139,46 @@ export default function Page() {
             {/* Linksonder */}
             <div className="absolute left-[320px] top-[510px] text-right max-w-[300px] transform translate-x-[-100%]">
               <h3
-                className={`text-xl font-bold ${
-                  imageIndex === 0
-                    ? "text-[var(--color-blauw)]"
-                    : "text-[#B0B0B0]"
-                }`}
+                className={`font-heading text-xl font-bold ${imageIndex === 0
+                  ? "text-[var(--color-blauw)]"
+                  : "text-[#B0B0B0]"
+                  }`}
               >
                 Weerwaarschuwingen{" "}
                 <span
-                  className={`transition-opacity duration-300 ${
-                    imageIndex === 0 ? "opacity-100" : "opacity-50"
-                  }`}
+                  className={`transition-opacity duration-300 ${imageIndex === 0 ? "opacity-100" : "opacity-50"
+                    }`}
                 >
                   ⚠️
                 </span>
               </h3>
               <p
-                className={`text-left mt-2 ${
-                  imageIndex === 0 ? "text-black" : "text-[#B0B0B0]"
-                }`}
+                className={`font-body text-left mt-2 ${imageIndex === 0 ? "text-black" : "text-[#B0B0B0]"
+                  }`}
               >
                 Waarschuwt voor extreem weer, zoals stormen of hevige regenval
               </p>
             </div>
 
             {/* Rechtsboven */}
-            <div className="absolute right-[-40px] top-[195px] text-left w-[300px]">
+            <div className="font-heading absolute right-[-40px] top-[195px] text-left w-[300px]">
               <h3
-                className={`text-xl font-bold ${
-                  imageIndex === 1
-                    ? "text-[var(--color-blauw)]"
-                    : "text-[#B0B0B0]"
-                }`}
+                className={`text-xl font-bold ${imageIndex === 1
+                  ? "text-[var(--color-blauw)]"
+                  : "text-[#B0B0B0]"
+                  }`}
               >
                 Actuele weersituatie{" "}
                 <span
-                  className={`transition-opacity duration-300 ${
-                    imageIndex === 1 ? "opacity-100" : "opacity-50"
-                  }`}
+                  className={`transition-opacity duration-300 ${imageIndex === 1 ? "opacity-100" : "opacity-50"
+                    }`}
                 >
                   🌡️
                 </span>
               </h3>
               <p
-                className={`text-base mt-2 ${
-                  imageIndex === 1 ? "text-black" : "text-[#B0B0B0]"
-                }`}
+                className={`font-body text-base mt-2 ${imageIndex === 1 ? "text-black" : "text-[#B0B0B0]"
+                  }`}
               >
                 Geeft de huidige weersomstandigheden, zoals temperatuur, wind en
                 neerslag, weer
@@ -200,25 +188,22 @@ export default function Page() {
             {/* Rechtsmidden */}
             <div className="absolute right-[-40px] top-[360px] text-left w-[300px]">
               <h3
-                className={`text-xl font-bold ${
-                  imageIndex === 0
-                    ? "text-[var(--color-blauw)]"
-                    : "text-[#B0B0B0]"
-                }`}
+                className={`font-heading text-xl font-bold ${imageIndex === 0
+                  ? "text-[var(--color-blauw)]"
+                  : "text-[#B0B0B0]"
+                  }`}
               >
                 Weersverwachting{" "}
                 <span
-                  className={`transition-opacity duration-300 ${
-                    imageIndex === 0 ? "opacity-100" : "opacity-50"
-                  }`}
+                  className={`transition-opacity duration-300 ${imageIndex === 0 ? "opacity-100" : "opacity-50"
+                    }`}
                 >
                   📅
                 </span>
               </h3>
               <p
-                className={`text-base mt-2 ${
-                  imageIndex === 0 ? "text-black" : "text-[#B0B0B0]"
-                }`}
+                className={`font-body text-base mt-2 ${imageIndex === 0 ? "text-black" : "text-[#B0B0B0]"
+                  }`}
               >
                 Biedt voorspellingen voor het weer in de komende uren en dagen
               </p>
@@ -227,25 +212,22 @@ export default function Page() {
             {/* Rechtsonder */}
             <div className="absolute right-[20px] top-[510px] text-left w-[300px]">
               <h3
-                className={`text-xl font-bold ${
-                  imageIndex === 1
-                    ? "text-[var(--color-blauw)]"
-                    : "text-[#B0B0B0]"
-                }`}
+                className={`font-heading text-xl font-bold ${imageIndex === 1
+                  ? "text-[var(--color-blauw)]"
+                  : "text-[#B0B0B0]"
+                  }`}
               >
                 Windvoorspelling{" "}
                 <span
-                  className={`transition-opacity duration-300 ${
-                    imageIndex === 1 ? "opacity-100" : "opacity-50"
-                  }`}
+                  className={`transition-opacity duration-300 ${imageIndex === 1 ? "opacity-100" : "opacity-50"
+                    }`}
                 >
                   💨
                 </span>
               </h3>
               <p
-                className={`text-left mt-2 ${
-                  imageIndex === 1 ? "text-black" : "text-[#B0B0B0]"
-                }`}
+                className={`font-body text-left mt-2 ${imageIndex === 1 ? "text-black" : "text-[#B0B0B0]"
+                  }`}
               >
                 Laat zien hoe sterk de wind zal zijn en uit welke richting deze
                 komt.
