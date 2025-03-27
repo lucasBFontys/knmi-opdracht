@@ -1,30 +1,32 @@
 "use client";
 
-import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import { motion, useAnimation, useScroll } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 export default function Features() {
   function AnimatedParagraph({ children }) {
     const controls = useAnimation();
-    const { ref, inView } = useInView({
-      triggerOnce: false,
-      threshold: 0.9,
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+      target: ref,
+      offset: ["start 50%", "end 50%"], // Triggert op 50% schermhoogte
     });
 
     useEffect(() => {
-      if (inView) {
-        controls.start({ color: "#000000", transition: { duration: 0.6 } });
-      } else {
-        controls.start({ color: "#9CA3AF", transition: { duration: 0.6 } });
-      }
-    }, [controls, inView]);
+      scrollYProgress.on("change", (latest) => {
+        if (latest > 0.5) {
+          controls.start({ color: "#000000", transition: { duration: 0.6 } });
+        } else {
+          controls.start({ color: "#9CA3AF", transition: { duration: 0.6 } }); // Lichtgrijs standaard
+        }
+      });
+    }, [scrollYProgress, controls]);
 
     return (
       <motion.p
         ref={ref}
         animate={controls}
-        initial={{ color: "#F1F6FD" }}
+        initial={{ color: "#9CA3AF" }} // Standaard lichtgrijs
         className="mb-6 text-lg md:text-xl font-semibold"
       >
         {children}
@@ -33,7 +35,7 @@ export default function Features() {
   }
 
   return (
-    <div className="w-full px-6 pt-24 bg-[var(--color-offwit)] text-left"> {/* Verhoog py-12 naar py-24 */}
+    <div className="w-full px-6 pt-24 bg-[var(--color-offwit)] text-left">
       <div className="max-w-2xl mx-auto">
         <AnimatedParagraph>
           Weerapps zijn er genoeg. Maar hoe vaak open je er één en word je overspoeld met advertenties, 
@@ -48,9 +50,11 @@ export default function Features() {
           Met een unieke functie die écht telt: officiële weerswaarschuwingen 
           bij gevaarlijk weer. Storm, gladheid, extreme hitte—je weet het als eerste.
         </AnimatedParagraph>
-        <AnimatedParagraph>
-          Duidelijk, snel, betrouwbaar. Zodat jij altijd voorbereid bent.
-        </AnimatedParagraph>
+        <div className="flex items-center">
+          <AnimatedParagraph>
+            Duidelijk, snel, betrouwbaar. Zodat jij altijd voorbereid bent.
+          </AnimatedParagraph>
+        </div>
       </div>
     </div>
   );

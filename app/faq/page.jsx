@@ -8,7 +8,7 @@ export default function FAQPage() {
 
   const faqs = [
     {
-      category: "🌍 Algemeen",
+      category: "Algemeen",
       items: [
         {
           question: "Wat is de KNMI Weer-app?",
@@ -38,7 +38,7 @@ export default function FAQPage() {
       ],
     },
     {
-      category: "☁️ Weersverwachtingen en informatie",
+      category: "Weersverwachtingen en informatie",
       items: [
         {
           question: "Hoe vaak wordt het weer geüpdatet?",
@@ -63,7 +63,7 @@ export default function FAQPage() {
       ],
     },
     {
-      category: "📡 Weerradar en kaarten",
+      category: "Weerradar en kaarten",
       items: [
         {
           question: "Hoe werkt de regenradar?",
@@ -94,7 +94,7 @@ export default function FAQPage() {
       ],
     },
     {
-      category: "🔔 Meldingen en instellingen",
+      category: "Meldingen en instellingen",
       items: [
         {
           question: "Kan ik meldingen krijgen voor slecht weer?",
