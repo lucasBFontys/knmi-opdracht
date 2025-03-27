@@ -33,7 +33,7 @@ export default function Features() {
   }
 
   return (
-    <div className="w-full px-6 py-12 bg-[var(--color-offwit)] text-left">
+    <div className="w-full px-6 pt-24 bg-[var(--color-offwit)] text-left"> {/* Verhoog py-12 naar py-24 */}
       <div className="max-w-2xl mx-auto">
         <AnimatedParagraph>
           Weerapps zijn er genoeg. Maar hoe vaak open je er één en word je overspoeld met advertenties, 
