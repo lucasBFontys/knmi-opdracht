@@ -3,10 +3,23 @@ import React from "react";
 import Image from "next/image";
 
 export default function Page() {
+  const handleRedirect = () => {
+    const userAgent = typeof window !== "undefined" ? navigator.userAgent || navigator.vendor || window.opera : "";
+
+    if (/android/i.test(userAgent)) {
+      window.open("https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US", "_blank");
+    } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      window.open("https://apps.apple.com/nl/app/knmi-weer/id1643626602", "_blank");
+    } else {
+      // Desktop fallback: Google Play (kan gewoon openen in browser)
+      window.open("https://play.google.com/store/apps/details?id=nl.knmi.weer&hl=nl&gl=US", "_blank");
+    }
+  };
+
   return (
     <div className="relative bg-white py-20 px-6 md:px-12 font-['Montserrat']">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-12 relative z-10">
-        {/* Tekst + knoppen */}
+        {/* Tekst + knop */}
         <div className="md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0c2340] mb-8 leading-snug font-['Inter']">
             Download de KNMI Weerapp en Blijf <br />
@@ -14,13 +27,12 @@ export default function Page() {
           </h2>
 
           <div className="flex gap-4 justify-center md:justify-start">
-            {/* Apple knop */}
-            <a
-              href="#"
+            <button
+              onClick={handleRedirect}
               className="bg-[#038a6f] hover:bg-[#026e59] text-white font-normal text-[16px] rounded-full px-6 py-3 flex items-center gap-2 shadow-md transition font-['Montserrat']"
             >
               Probeer het nu
-            </a>
+            </button>
           </div>
         </div>
 
