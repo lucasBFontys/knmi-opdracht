@@ -8,7 +8,7 @@ export default function FAQPage() {
 
   const faqs = [
     {
-      category: "Algemeen",
+      category: "🌍 Algemeen",
       items: [
         {
           question: "Wat is de KNMI Weer-app?",
@@ -38,7 +38,7 @@ export default function FAQPage() {
       ],
     },
     {
-      category: "Weersverwachtingen en informatie",
+      category: " ☁️ Weersverwachtingen en informatie",
       items: [
         {
           question: "Hoe vaak wordt het weer geüpdatet?",
@@ -63,7 +63,7 @@ export default function FAQPage() {
       ],
     },
     {
-      category: "Weerradar en kaarten",
+      category: "📡 Weerradar en kaarten",
       items: [
         {
           question: "Hoe werkt de regenradar?",
@@ -94,7 +94,7 @@ export default function FAQPage() {
       ],
     },
     {
-      category: "Meldingen en instellingen",
+      category: "🔔 Meldingen en instellingen",
       items: [
         {
           question: "Kan ik meldingen krijgen voor slecht weer?",
@@ -132,7 +132,7 @@ export default function FAQPage() {
   ];
 
   return (
-    <div className="mt-10 min-h-screen flex flex-col items-center justify-center  text-[#0c2340] py-10 px-4 md:px-10">
+    <div className=" mt-10 min-h-screen flex flex-col items-center justify-center  text-[#0c2340] py-10 px-4 md:px-10">
       <div className="max-w-3xl w-full text-center">
         <h1 className="text-[32px] font-bold mb-2 font-['Inter']">FAQ</h1>
         <h2 className="text-[24px] font-semibold mb-4 font-['Inter']">
