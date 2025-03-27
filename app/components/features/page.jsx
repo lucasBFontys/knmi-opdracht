@@ -27,7 +27,7 @@ export default function Features() {
         ref={ref}
         animate={controls}
         initial={{ color: "#9CA3AF" }} // Standaard lichtgrijs
-        className="mb-6 text-lg md:text-xl font-semibold font-body"
+        className="mb-6 text-lg md:text-xl font-medium font-body"
       >
         {children}
       </motion.p>
