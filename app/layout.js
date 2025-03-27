@@ -12,9 +12,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="nl" suppressHydrationWarning>
       <body>
-        <Header />
-        <ThemeProvider>{children}</ThemeProvider>
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   )

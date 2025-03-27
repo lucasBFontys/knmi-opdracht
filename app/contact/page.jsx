@@ -1,12 +1,6 @@
 export default function Contact() {
     return (
         <section className=" overflow-hidden">
-
-            <div className="absolute inset-0 -z-10 pointer-events-none">
-                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% bottom-20 -left-30"></div>
-                <div className="absolute w-100 h-100 rounded-full bg-radial from-blauwaidsvelk to-70% -top-10 -right-30"></div>
-            </div>
-
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 className="mb-4 text-4xl tracking-tight font-heading font-bold text-center text-black">
                     Neem contact op

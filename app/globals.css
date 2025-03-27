@@ -37,48 +37,33 @@
 
 @import "tailwindcss";
 
+@theme {
+    --color-blauw: #081534;
+    --color-lblauw: #92AEC3;
+    --color-offwit: #F4F9FF;
+    --color-groen: #038A6F;
+    --color-groendark: #006551;
+
+
+    --font-body: "Montserrat", sans-serif;
+    --font-accent: "Poppins", sans-serif;
+    --font-heading: "Inter", sans-serif;
+}
+
 @layer base {
-    :root {
-        /* Convert hex to RGB for Tailwind 4 compatibility */
-        --color-blauw: 8 21 52;
-        /* #081534 */
-        --color-lblauw: 146 174 195;
-        /* #92aec3 */
-        --color-offwit: 244 249 255;
-        /* #F4F9FF */
-        --color-groen: 3 138 111;
-        /* #038a6f */
-        --color-groendark: 0 101 81;
-        /* #006551 */
-        --color-blauwaidsvelk: 117 156 224;
-        /* #759CE0 */
-
-        --font-body: "Montserrat", sans-serif;
-        --font-accent: "Poppins", sans-serif;
-        --font-heading: "Inter", sans-serif;
-    }
-
     .dark {
-        --color-blauw: 10 28 69;
-        /* #0a1c45 */
-        --color-lblauw: 74 106 133;
-        /* #4a6a85 */
-        --color-offwit: 18 24 38;
-        /* #121826 */
-        --color-groen: 3 161 132;
-        /* #03a184 */
-        --color-groendark: 1 122 99;
-        /* #017a63 */
-        --color-blauwaidsvelk: 74 119 192;
-        /* #4a77c0 */
+        --color-drblauw: #0A1C45;
+        --color-drlblauw: #4A6A85;
+        --color-drbr: #121826;
+        --color-drgroen: #03A184;
+        --color-drgroendark: #017A63;
     }
 
     body {
-        background-color: rgb(var(--color-offwit));
-        color: rgb(var(--color-blauw));
+        background-color: var(--color-offwit);
     }
 
     .dark body {
-        color: rgb(226 232 240);
+        background-color: var(--color-drbr);
     }
 }

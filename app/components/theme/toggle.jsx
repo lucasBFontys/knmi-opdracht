@@ -9,10 +9,10 @@ export function ThemeToggle() {
     return (
         <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="w-10 h-10 flex items-center justify-center text-[rgb(var(--color-blauw))] dark:text-[rgb(226_232_240)] rounded-full transition-colors"
+            className="w-10 h-10 flex items-center justify-center text-black dark:text-white rounded-full transition-colors"
             aria-label="Toggle dark mode"
         >
-            {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            {theme === "dark" ? <Sun className="h-6 w-6" /> : <Moon className="h-6 w-6" />}
         </button>
     )
 }
