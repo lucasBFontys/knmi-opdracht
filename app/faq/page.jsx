@@ -50,7 +50,7 @@ export default function FAQPage() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-white to-blue-100 text-[#0c2340] py-10 px-4 md:px-10">
+    <div className="mt-10 min-h-screen flex flex-col items-center justify-center bg-gradient-to-r from-white to-blue-100 text-[#0c2340] py-10 px-4 md:px-10">
       <div className="max-w-3xl w-full text-center">
         <h1 className="text-[32px] font-bold mb-2 font-['Inter']">FAQ</h1>
         <h2 className="text-[24px] font-semibold mb-4 font-['Inter']">Veelgestelde Vragen</h2>
