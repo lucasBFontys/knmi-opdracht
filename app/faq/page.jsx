@@ -8,7 +8,7 @@ export default function FAQPage() {
 
   const faqs = [
     {
-      category: "🌍 Algemeen",
+      category: "Algemeen",
       items: [
         { question: "Wat is de KNMI Weer-app?", answer: "De KNMI Weer-app is de officiële applicatie van het Koninklijk Nederlands Meteorologisch Instituut (KNMI). De app biedt actuele weersinformatie en waarschuwingen voor Nederland." },
         { question: "Is de KNMI Weer-app gratis?", answer: "Ja, de app is volledig gratis te downloaden en te gebruiken. Zonder reclame." },
@@ -18,7 +18,7 @@ export default function FAQPage() {
       ],
     },
     {
-      category: "☁️ Weersverwachtingen en informatie",
+      category: "Weersverwachtingen en informatie",
       items: [
         { question: "Hoe vaak wordt het weer geüpdatet?", answer: "De weersinformatie wordt continu bijgewerkt met de nieuwste gegevens van het KNMI. De verwachting wordt elk uur geüpdatet." },
         { question: "Waar komt de weerinformatie vandaan?", answer: "Alle gegevens in de app zijn afkomstig van het KNMI, de officiële meteorologische dienst van Nederland." },
@@ -27,7 +27,7 @@ export default function FAQPage() {
       ],
     },
     {
-      category: "📡 Weerradar en kaarten",
+      category: "Weerradar en kaarten",
       items: [
         { question: "Hoe werkt de regenradar?", answer: "De regenradar toont een real-time kaart van neerslag in Nederland. Je kunt vooruit en achteruit scrollen om de regenverwachting te bekijken." },
         { question: "Kan ik de windrichting en windsnelheid zien?", answer: "Ja, de app toont informatie over windrichting, windsnelheid en windstoten op basis van actuele meetgegevens." },
@@ -37,7 +37,7 @@ export default function FAQPage() {
       ],
     },
     {
-      category: "🔔 Meldingen en instellingen",
+      category: "Meldingen en instellingen",
       items: [
         { question: "Kan ik meldingen krijgen voor slecht weer?", answer: "Ja, je kunt notificaties instellen voor weerwaarschuwingen en specifieke locaties." },
         { question: "Hoe pas ik mijn locatie-instellingen aan?", answer: "Ga naar Instellingen > Mijn Locatie en voeg handmatig plaatsen toe of gebruik GPS voor automatische updates." },
