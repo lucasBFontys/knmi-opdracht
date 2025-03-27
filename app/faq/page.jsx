@@ -71,7 +71,14 @@ export default function FAQPage() {
 
       <div className="max-w-3xl w-full">
         {faqs.map((section, index) => (
-          <div key={index} className="bg-white border border-blue-200 p-6 rounded-xl shadow-md mb-6">
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className="bg-white border border-blue-200 p-6 rounded-xl shadow-md mb-6"
+          >
             <h3 className="text-[20px] font-semibold text-[#0c2340] mb-3 font-['Inter']">{section.category}</h3>
             <div className="space-y-4">
               {section.items
@@ -80,7 +87,7 @@ export default function FAQPage() {
                   <FAQItem key={i} question={faq.question} answer={faq.answer} />
                 ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
@@ -100,8 +107,16 @@ function FAQItem({ question, answer }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="bg-white border border-blue-100 shadow-sm rounded-lg p-4 mb-4">
-      <button
+    <motion.div
+      className="bg-white border border-blue-100 shadow-sm rounded-lg p-4 mb-4"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4 }}
+      viewport={{ once: true }}
+    >
+      <motion.button
+        whileHover={{ scale: 1.02 }}
+        whileTap={{ scale: 0.98 }}
         className="w-full grid grid-cols-[1fr_auto] items-start text-left text-[18px] font-medium focus:outline-none text-[#0c2340] hover:bg-blue-50 rounded-md px-2 py-1 transition"
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -109,7 +124,7 @@ function FAQItem({ question, answer }) {
         <span className={`text-xl text-[#038a6f] transform transition-transform duration-300 ${isOpen ? "rotate-45" : ""}`}>
           +
         </span>
-      </button>
+      </motion.button>
       <motion.div
         initial={{ height: 0, opacity: 0 }}
         animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
@@ -118,6 +133,6 @@ function FAQItem({ question, answer }) {
       >
         <p className="text-[16px] text-[#4b5563] font-['Montserrat'] leading-relaxed">{answer}</p>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
