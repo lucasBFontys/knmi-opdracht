@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KNMI Promotie Website - README
 
-## Getting Started
+## Over dit project
 
-First, run the development server:
+Dit project is ontwikkeld als onderdeel van een opdracht voor het promoten van de **open-source KNMI weerapp**. De website informeert gebruikers over de voordelen van de app, met als doel om downloads en gebruik te stimuleren. De site is gebouwd met **Next.js** en **React**, en bevat meerdere interactieve en informatieve pagina’s.
 
-```bash
+## Functionaliteiten
+
+- Dynamische pagina’s met Next.js routing  
+- Contactformulier met ondersteuning voor feedback  
+- Testimonials en reviews van gebruikers  
+- Interactieve visualisaties van de features  
+- Nieuws- en updategedeelte  
+- FAQ-pagina  
+- Integratie van afbeeldingen, video en animaties  
+- Hosting via Vercel  
+
+## Vereisten
+
+Zorg ervoor dat je de volgende software op je systeem hebt geïnstalleerd:
+
+- [Node.js](https://nodejs.org/) (aanbevolen versie: LTS)  
+- npm
+
+## Installatie
+
+1. **Clone de repository**
+
+   ```sh
+   git clone <repository-url>
+   cd knmi-opdracht-main
+   ```
+
+2. **Installeer de dependencies**
+
+   ```sh
+   npm install
+   ```
+
+## Project starten
+
+Om de development-server te starten, gebruik:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Het project is dan beschikbaar op:  
+[http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+De site is ook online te bekijken via:  
+[https://semester-3-v3.vercel.app](https://knmi-opdracht-two.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Structuur van het project
 
-## Learn More
+```
+/knmi-opdracht-main
+│-- app/              # Pagina’s zoals home, contact, FAQ, nieuws, over
+│   └── components/   # Herbruikbare React-componenten
+│   └── page's        # Pagina's van de site
+│   └── CSS & layout  # De stijl van de pagina's
+│-- public/           # Afbeeldingen, mockups en media
+│-- package.json      # Projectconfiguratie en dependencies
+│-- next.config.mjs   # Next.js configuratie
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Extra informatie
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deze website is onderdeel van een promotiecampagne voor de KNMI-app en richt zich op gebruikers die afhankelijk zijn van betrouwbare weersinformatie, zoals wandelaars, fietsers, watersporters en reizigers. Het project is geoptimaliseerd voor snelheid, gebruiksvriendelijkheid en visuele aantrekkelijkheid. Echter is dit een opdracht van 2manydots om zo promo website te maken.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Extra mogelijkheden voor uitbreiding zijn onder andere:
 
-## Deploy on Vercel
+- Integratie met real-time weerdata via API
+- Gebruik van een (headless) CMS voor contentbeheer
+- Meer on-scroll animaties voor dynamische presentaties
+- SEO-optimalisatie via tools als Yoast
+- Darkmode
+- Multi-talen uitbreiding
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Gemaakt als leerproject in het kader van een semesteropdracht.*
