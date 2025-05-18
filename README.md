@@ -1,82 +1,83 @@
-# KNMI Promotie Website - README
+# KNMI Promotion Website - README
 
-## Over dit project
+## About this project
 
-Dit project is ontwikkeld als onderdeel van een opdracht voor het promoten van de **open-source KNMI weerapp**. De website informeert gebruikers over de voordelen van de app, met als doel om downloads en gebruik te stimuleren. De site is gebouwd met **Next.js** en **React**, en bevat meerdere interactieve en informatieve pagina’s.
+This project was developed as part of an assignment to promote the **open-source KNMI weather app**. The website informs users about the benefits of the app with the goal of increasing downloads and usage. The site is built using **Next.js** and **React**, and contains multiple interactive and informative pages.
 
-## Functionaliteiten
+## Features
 
-- Dynamische pagina’s met Next.js routing  
-- Contactformulier met ondersteuning voor feedback  
-- Testimonials en reviews van gebruikers  
-- Interactieve visualisaties van de features  
-- Nieuws- en updategedeelte  
-- FAQ-pagina  
-- Integratie van afbeeldingen, video en animaties  
-- Hosting via Vercel  
+* Dynamic pages using Next.js routing
+* Contact form with feedback support
+* Testimonials and user reviews
+* Interactive visualizations of app features
+* News and updates section
+* FAQ page
+* Integration of images, video, and animations
+* Hosting via Vercel
 
-## Vereisten
+## Requirements
 
-Zorg ervoor dat je de volgende software op je systeem hebt geïnstalleerd:
+Make sure you have the following software installed on your system:
 
-- [Node.js](https://nodejs.org/) (aanbevolen versie: LTS)  
-- npm
+* [Node.js](https://nodejs.org/) (recommended version: LTS)
+* npm
 
-## Installatie
+## Installation
 
-1. **Clone de repository**
+1. **Clone the repository**
 
    ```sh
    git clone <repository-url>
    cd knmi-opdracht-main
    ```
 
-2. **Installeer de dependencies**
+2. **Install the dependencies**
 
    ```sh
    npm install
    ```
 
-## Project starten
+## Running the Project
 
-Om de development-server te starten, gebruik:
+To start the development server, run:
 
 ```sh
 npm run dev
 ```
 
-Het project is dan beschikbaar op:  
+The project will be available at:
 [http://localhost:3000](http://localhost:3000)
 
-De site is ook online te bekijken via:  
-[https://semester-3-v3.vercel.app](https://knmi-opdracht-two.vercel.app/)
+The site is also live at:
+[https://knmi-opdracht-two.vercel.app](https://knmi-opdracht-two.vercel.app)
 
-## Structuur van het project
+## Project Structure
 
 ```
 /knmi-opdracht-main
-│-- app/              # Pagina’s zoals home, contact, FAQ, nieuws, over
-│   └── components/   # Herbruikbare React-componenten
-│   └── page's        # Pagina's van de site
-│   └── CSS & layout  # De stijl van de pagina's
-│-- public/           # Afbeeldingen, mockups en media
-│-- package.json      # Projectconfiguratie en dependencies
-│-- next.config.mjs   # Next.js configuratie
+│-- app/              # Pages like home, contact, FAQ, news, about
+│   └── components/   # Reusable React components
+│   └── page's        # Website pages
+│   └── CSS & layout  # Page styling
+│-- public/           # Images, mockups, and media
+│-- package.json      # Project configuration and dependencies
+│-- next.config.mjs   # Next.js configuration
 ```
 
-## Extra informatie
+## Additional Information
 
-Deze website is onderdeel van een promotiecampagne voor de KNMI-app en richt zich op gebruikers die afhankelijk zijn van betrouwbare weersinformatie, zoals wandelaars, fietsers, watersporters en reizigers. Het project is geoptimaliseerd voor snelheid, gebruiksvriendelijkheid en visuele aantrekkelijkheid. Echter is dit een opdracht van 2manydots om zo promo website te maken.
+This website is part of a promotional campaign for the KNMI app and targets users who rely on accurate weather information, such as hikers, cyclists, water sports enthusiasts, and travelers. The project is optimized for performance, user-friendliness, and visual appeal. It was created as an assignment from 2manydots to design a promotional website.
 
-Extra mogelijkheden voor uitbreiding zijn onder andere:
+Potential future expansions include:
 
-- Integratie met real-time weerdata via API
-- Gebruik van een (headless) CMS voor contentbeheer
-- Meer on-scroll animaties voor dynamische presentaties
-- SEO-optimalisatie via tools als Yoast
-- Darkmode
-- Multi-talen uitbreiding
+* Integration with real-time weather data via an API
+* Use of a (headless) CMS for content management
+* More scroll-based animations for dynamic presentation
+* SEO optimization using tools like Yoast
+* Dark mode
+* Multi-language support
 
 ---
 
-*Gemaakt als leerproject in het kader van een semesteropdracht.*
+*Created as a learning project within the context of a semester assignment.*
+
