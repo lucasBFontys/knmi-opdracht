@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KNMI Promotion Website - README
 
-## Getting Started
+## About this project
 
-First, run the development server:
+This project was developed as part of an assignment to promote the **open-source KNMI weather app**. The website informs users about the benefits of the app with the goal of increasing downloads and usage. The site is built using **Next.js** and **React**, and contains multiple interactive and informative pages.
 
-```bash
+## Features
+
+* Dynamic pages using Next.js routing
+* Contact form with feedback support
+* Testimonials and user reviews
+* Interactive visualizations of app features
+* News and updates section
+* FAQ page
+* Integration of images, video, and animations
+* Hosting via Vercel
+
+## Requirements
+
+Make sure you have the following software installed on your system:
+
+* [Node.js](https://nodejs.org/) (recommended version: LTS)
+* npm
+
+## Installation
+
+1. **Clone the repository**
+
+   ```sh
+   git clone <repository-url>
+   cd knmi-opdracht-main
+   ```
+
+2. **Install the dependencies**
+
+   ```sh
+   npm install
+   ```
+
+## Running the Project
+
+To start the development server, run:
+
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The project will be available at:
+[http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+The site is also live at:
+[https://knmi-opdracht-two.vercel.app](https://knmi-opdracht-two.vercel.app)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
 
-## Learn More
+```
+/knmi-opdracht-main
+│-- app/              # Pages like home, contact, FAQ, news, about
+│   └── components/   # Reusable React components
+│   └── page's        # Website pages
+│   └── CSS & layout  # Page styling
+│-- public/           # Images, mockups, and media
+│-- package.json      # Project configuration and dependencies
+│-- next.config.mjs   # Next.js configuration
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Additional Information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This website is part of a promotional campaign for the KNMI app and targets users who rely on accurate weather information, such as hikers, cyclists, water sports enthusiasts, and travelers. The project is optimized for performance, user-friendliness, and visual appeal. It was created as an assignment from 2manydots to design a promotional website.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Potential future expansions include:
 
-## Deploy on Vercel
+* Integration with real-time weather data via an API
+* Use of a (headless) CMS for content management
+* More scroll-based animations for dynamic presentation
+* SEO optimization using tools like Yoast
+* Dark mode
+* Multi-language support
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Created as a learning project within the context of a semester assignment.*
+
