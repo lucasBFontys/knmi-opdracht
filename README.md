@@ -49,7 +49,7 @@ The project will be available at:
 [http://localhost:3000](http://localhost:3000)
 
 The site is also live at:
-[https://knmi-opdracht-two.vercel.app](https://knmi-opdracht-two.vercel.app)
+[https://knmiapp-opdracht.vercel.app/](https://knmiapp-opdracht.vercel.app/)
 
 ## Project Structure
 
